@@ -17,3 +17,7 @@ services:
         value: /var/data/uploads
       - key: ALLOWED_ORIGINS
         sync: false
+   disk:
+      name: desibites-data
+      mountPath: /var/data
+      sizeGB: 1
