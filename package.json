@@ -1,0 +1,17 @@
+{
+  "name": "desibites",
+  "private": true,
+  "version": "1.0.0",
+  "description": "DesiBites — desi food ordering platform (customer site + admin panel + API)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend && npm install --prefix admin",
+    "seed": "npm run seed --prefix backend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:admin": "npm run dev --prefix admin",
+    "dev": "concurrently -n backend,frontend,admin -c blue,green,magenta \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:admin\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

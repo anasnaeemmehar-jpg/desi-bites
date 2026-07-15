@@ -1,0 +1,44 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-page-header {
+  padding: 30px 36px 0;
+}
+.admin-page-header h1 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.admin-page-header p {
+  color: var(--admin-text-soft);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.admin-content {
+  padding: 24px 36px 60px;
+}
+
+@media (max-width: 900px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 18px;
+    overflow-x: auto;
+  }
+  .sidebar-logo, .sidebar-footer { display: none; }
+  .sidebar-nav { flex-direction: row; }
+}

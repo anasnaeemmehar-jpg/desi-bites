@@ -1,0 +1,80 @@
+.orders-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.filter-chip {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--admin-line);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--admin-text-soft);
+  text-transform: capitalize;
+  transition: all 0.15s ease;
+}
+.filter-chip:hover {
+  border-color: var(--admin-saffron);
+}
+.filter-chip.active {
+  background: var(--admin-charcoal);
+  border-color: var(--admin-charcoal);
+  color: #fff;
+}
+
+.order-row {
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+.order-row:hover {
+  background: var(--admin-bg);
+}
+
+.order-phone {
+  font-size: 0.78rem;
+  color: var(--admin-text-soft);
+  margin-top: 2px;
+}
+
+.status-select {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.status-select.badge-pending { background: #FDF1DC; color: #B8791F; }
+.status-select.badge-confirmed { background: #E3EEFB; color: #2E5FA3; }
+.status-select.badge-preparing { background: #F1E6FB; color: #7135A8; }
+.status-select.badge-on_the_way { background: #FDEBD8; color: #C15D1E; }
+.status-select.badge-delivered { background: #E4F5E4; color: var(--admin-mint); }
+.status-select.badge-cancelled { background: #FBE4E1; color: var(--admin-danger); }
+
+.order-details-row td {
+  background: var(--admin-bg);
+  padding: 0;
+}
+
+.order-details {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.order-details strong {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--admin-text-soft);
+  margin-bottom: 4px;
+}
+.order-details p {
+  font-size: 0.88rem;
+  color: var(--admin-charcoal);
+}

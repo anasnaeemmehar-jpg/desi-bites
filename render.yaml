@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: desibites-backend
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DB_DIR
+        value: /var/data
+      - key: UPLOADS_DIR
+        value: /var/data/uploads
+      - key: ALLOWED_ORIGINS
+        sync: false
+    disk:
+      name: desibites-data
+      mountPath: /var/data
+      sizeGB: 1

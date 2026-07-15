@@ -1,0 +1,158 @@
+.track-page {
+  padding: 50px 24px 100px;
+  max-width: 720px;
+}
+
+.track-form {
+  display: flex;
+  gap: 12px;
+  margin: 26px 0 40px;
+}
+.track-form input {
+  flex: 1;
+  padding: 13px 18px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-line);
+  font-size: 0.95rem;
+}
+.track-form input:focus {
+  outline: none;
+  border-color: var(--color-saffron);
+}
+
+.track-error {
+  color: var(--color-maroon);
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.track-result {
+  background: var(--color-cream-card);
+  border: 1px solid var(--color-line);
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.track-order-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-line);
+  margin-bottom: 30px;
+}
+
+.track-label {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal-soft);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.track-order-meta h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+.track-order-meta p {
+  color: var(--color-charcoal-soft);
+  font-size: 0.88rem;
+  max-width: 280px;
+}
+
+.track-total {
+  text-align: right;
+}
+
+.track-cancelled {
+  color: var(--color-maroon);
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.status-tracker {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 0 4px;
+}
+.status-tracker::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: var(--color-line);
+  z-index: 0;
+}
+
+.status-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  text-align: center;
+}
+.status-step span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-charcoal-soft);
+}
+.status-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-line);
+  border: 3px solid var(--color-bg);
+}
+.status-step.done .status-dot {
+  background: var(--color-mint);
+}
+.status-step.done span {
+  color: var(--color-charcoal);
+}
+.status-step.current .status-dot {
+  background: var(--color-saffron);
+  box-shadow: 0 0 0 4px rgba(232, 168, 60, 0.25);
+}
+.status-step.current span {
+  color: var(--color-maroon);
+  font-weight: 700;
+}
+
+.track-items h3 {
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+.track-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--color-charcoal-soft);
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--color-line);
+}
+
+@media (max-width: 560px) {
+  .track-order-meta {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .track-total {
+    text-align: left;
+  }
+  .status-tracker {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .status-tracker::before {
+    display: none;
+  }
+}

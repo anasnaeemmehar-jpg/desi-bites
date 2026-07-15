@@ -1,0 +1,43 @@
+.page-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.product-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--admin-bg);
+}
+.product-thumb.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.featured-tag {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--admin-saffron);
+  background: #FFF6E5;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.price-old {
+  display: block;
+  font-size: 0.75rem;
+  color: #A99C8A;
+  text-decoration: line-through;
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}

@@ -1,0 +1,117 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: var(--admin-sidebar);
+  color: #E8E3DB;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 18px;
+}
+
+.sidebar-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  padding: 0 10px 28px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.sidebar-logo span:first-of-type {
+  color: var(--admin-saffron);
+}
+.sidebar-logo-tag {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #857A6C;
+  background: rgba(255,255,255,0.06);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 9px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #B5AB9C;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.sidebar-link:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+.sidebar-link.active {
+  background: var(--admin-maroon);
+  color: #fff;
+}
+
+.sidebar-icon {
+  font-size: 1rem;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 18px;
+  margin-top: 18px;
+}
+
+.sidebar-admin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px 14px;
+}
+
+.sidebar-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--admin-saffron);
+  color: #201C19;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.sidebar-admin-name {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #fff;
+}
+.sidebar-admin-role {
+  font-size: 0.72rem;
+  color: #857A6C;
+  text-transform: capitalize;
+}
+
+.sidebar-logout {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  color: #E8E3DB;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.sidebar-logout:hover {
+  background: rgba(255,255,255,0.1);
+}
