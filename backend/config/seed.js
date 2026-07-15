@@ -7,7 +7,7 @@ import db from './database.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // desibites.sql (the schema/seed source) always lives in the repo's database/
 // folder, regardless of where the .db file itself is written (DB_DIR).
-const sqlPath = path.join(__dirname, '..', '..', 'database', 'desibites.sql');
+const sqlPath = path.join(__dirname, '..', 'database', 'desibites.sql');
 
 console.log('Seeding database...');
 

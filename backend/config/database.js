@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // DB_PATH lets production (e.g. Render persistent disk) point at a mounted
 // volume; defaults to the repo's database/ folder for local dev.
-const dbDir = process.env.DB_DIR || path.join(__dirname, '..', '..', 'database');
+const dbDir = process.env.DB_DIR || path.join(__dirname, '..', 'database');
 if (!fs.existsSync(dbDir)) {
   fs.mkdirSync(dbDir, { recursive: true });
 }
